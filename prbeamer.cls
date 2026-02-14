@@ -1,6 +1,6 @@
 % mybeamer.cls - 完整最终版
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mybeamer}[2026/02/13 Final Custom Beamer Template]
+\ProvidesClass{prbeamer}[2026/02/13 Final Custom Beamer Template]
 % -------------------
 % 加载 Beamer（默认顶对齐）
 % -------------------
