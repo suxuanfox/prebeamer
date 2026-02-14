@@ -1,0 +1,178 @@
+\documentclass{mybeamer}
+
+% -------------------
+% 基本信息
+% -------------------
+\title{Beamer 模板功能测试}
+\author{测试作者}
+\institute{某某大学数学系}
+\date{\today}
+
+% -------------------
+% 参考文献
+% -------------------
+\addbibresource{ref.bib}
+
+\begin{document}
+
+% 标题页
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% 总目录
+\begin{frame}
+  \frametitle{总目录}
+  \tableofcontents
+\end{frame}
+
+%================================================
+\section{基础功能测试}
+%================================================
+
+\begin{frame}
+\frametitle{普通文本与列表}
+
+这是普通正文。测试{\em{这是质量能量方程$E=mc^2$}} 效果。\footnote{这是一个脚注。}
+
+\begin{itemize}
+\item 一级条目
+\item 二级条目
+  \begin{itemize}
+  \item 子条目
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Block 环境测试}
+
+\begin{block}{普通 Block}
+这是一个普通的 block 内容。
+\end{block}
+
+\end{frame}
+
+%================================================
+\section{定理环境测试}
+%================================================
+
+\begin{frame}
+\frametitle{定理类环境}
+
+\begin{mytheorem}
+设 $a,b\in\mathbb{R}$，则
+\[
+(a+b)^2=a^2+2ab+b^2.
+\]
+\end{mytheorem}
+
+\begin{mycorollary}
+若 $a=b$，则 $(2a)^2=4a^2$。
+\end{mycorollary}
+
+\begin{mylemma}
+任意正数平方仍为正数。
+\end{mylemma}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{定义与例}
+
+\begin{mydefinition}
+若函数 $f$ 在点 $x_0$ 处满足
+\[
+\lim_{x\to x_0}f(x)=f(x_0),
+\]
+则称 $f$ 在 $x_0$ 连续。
+\end{mydefinition}
+
+\begin{myexample}
+函数 $f(x)=x^2$ 在 $\mathbb{R}$ 上处处连续。
+\end{myexample}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{命题与证明}
+
+\begin{proposition}
+若 $n$ 为偶数，则 $n^2$ 也是偶数。
+\end{proposition}
+
+\begin{myproof}
+设 $n=2k$，则
+\[
+n^2=(2k)^2=4k^2=2(2k^2),
+\]
+故为偶数。
+\end{myproof}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{其他定理环境}
+
+\begin{conjecture}
+所有偶数都可以表示为两个素数之和。
+\end{conjecture}
+
+\begin{remark}
+这是一个注记环境。
+\end{remark}
+
+\begin{convention}
+本文中默认 $\mathbb{N}=\{0,1,2,3,\dots\}$。
+\end{convention}
+
+\begin{exercise}
+证明：若 $x>0$，则 $\sqrt{x^2}=x$。
+\end{exercise}
+
+\end{frame}
+
+%================================================
+\section{提示与习题环境}
+%================================================
+
+\begin{frame}
+\frametitle{hint 与 tips}
+
+这是一个提示测试
+\begin{hint}
+考虑平方展开公式。
+\end{hint}
+
+\begin{tips}
+这是一个阅读提示框，可以放较长的说明性文字。
+例如：本节内容是后续定理的重要基础。
+\end{tips}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{引用测试}
+
+经典教材可参见 \cite{key111}。
+\end{frame}
+
+\section{参考文献}
+\begin{frame}
+\printbibliography
+
+\end{frame}
+
+
+\end{document}
