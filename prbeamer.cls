@@ -7,8 +7,6 @@
 \PassOptionsToClass{t}{beamer}
 \LoadClass{beamer}
 
-
-
 % -------------------
 % 字体与编码
 % -------------------
@@ -59,13 +57,6 @@
         };
     \end{tikzpicture}%
 }
-
-
-
-
-
-
-
 
 % ---------- 英文字体 ----------
 \setsansfont{Source Sans 3}%西文无衬线字体
@@ -262,9 +253,6 @@
 }
 \setbeamertemplate{theorem end}{\par\vspace{2mm}} % 定理结束后空白
 
-
-
-
 \setbeamerfont{theorem title}{series=\bfseries,family=\thmheiti}
 \setbeamerfont{theorem body}{family=\fangsong}
 \newtheorem{mytheorem}{定理}[section] % 按section编号
@@ -354,10 +342,6 @@
 }
 \makeatother
 
-
-
-
-
 % -------------------------------
 % proof 环境定制（方角 + block 色调）
 % -------------------------------
@@ -421,13 +405,6 @@
     \endgroup
 }
 
-
-
-
-
-
-
-
 % -------------------
 % 标题页模板
 % -------------------
@@ -447,11 +424,6 @@
 }
 \setbeamertemplate{title page}[custom]
 
-
-
-
-
-
 % -------------------
 % 自动目录页
 % -------------------
@@ -461,7 +433,6 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
-
 
 \newenvironment{nonumberframe}[1][]{
   \numberedframefalse
