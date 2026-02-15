@@ -1,4 +1,3 @@
-% mybeamer.cls - 完整最终版
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{prbeamer}[2026/02/13 Final Custom Beamer Template]
 % -------------------
