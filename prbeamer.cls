@@ -257,53 +257,53 @@
 \newtheorem{mytheorem}{定理}[section] % 按section编号
 		\newtheorem{mycorollary}[mytheorem]{推论}
 		\newtheorem{mylemma}[mytheorem]{引理}
-		\newtheorem{proposition}[mytheorem]{命题}
+		\newtheorem{myproposition}[mytheorem]{命题}
 		\newtheorem{mydefinition}[mytheorem]{定义}
 		\newtheorem{definition-theorem}[mytheorem]{定义--定理}
 		\newtheorem{definition-proposition}[mytheorem]{定义--命题}
-		\newtheorem{hypothesis}[mytheorem]{假设}
-		\newtheorem{conjecture}[mytheorem]{猜想}
+		\newtheorem{myhypothesis}[mytheorem]{假设}
+		\newtheorem{myconjecture}[mytheorem]{猜想}
 
 
 		\newtheorem{myexample}[mytheorem]{例}
-		\newtheorem{remark}[mytheorem]{注记}
-		\newtheorem{convention}[mytheorem]{约定}
-		\newtheorem{exercise}[mytheorem]{练习}		% 穿插于文中的习题
+		\newtheorem{myremark}[mytheorem]{注记}
+		\newtheorem{myconvention}[mytheorem]{约定}
+		\newtheorem{myexercise}[mytheorem]{练习}		% 穿插于文中的习题
 
 %以下采用保存原设定->修改字体->恢复原设定的方式, 定义了几个特例环境
 \makeatletter
 % ---------- 宋体环境 ----------
 % hypothesis
-\let\oldhypothesis\hypothesis
-\let\endoldhypothesis\endhypothesis
-\renewenvironment{hypothesis}[1][]{
+\let\oldhypothesis\myhypothesis
+\let\endoldmyhypothesis\endmyhypothesis
+\renewenvironment{myhypothesis}[1][]{
     \setbeamerfont{theorem body}{family=\songti,series=\mdseries}% 宋体
     \oldhypothesis[#1]
 }{
     \setbeamerfont{theorem body}{family=\fangsong}% 恢复仿宋
-    \endoldhypothesis
+    \endoldmyhypothesis
 }
 
 % conjecture
-\let\oldconjecture\conjecture
-\let\endoldconjecture\endconjecture
-\renewenvironment{conjecture}[1][]{
+\let\oldmyconjecture\myconjecture
+\let\endoldmyconjecture\endmyconjecture
+\renewenvironment{myconjecture}[1][]{
     \setbeamerfont{theorem body}{family=\songti,series=\mdseries}% 宋体
-    \oldconjecture[#1]
+    \oldmyconjecture[#1]
 }{
     \setbeamerfont{theorem body}{family=\fangsong}% 恢复仿宋
-    \endoldconjecture
+    \endoldmyconjecture
 }
 
 % exercise
-\let\oldexercise\exercise
-\let\endoldexercise\endexercise
-\renewenvironment{exercise}[1][]{
+\let\oldmyexercise\myexercise
+\let\endoldmyexercise\endmyexercise
+\renewenvironment{myexercise}[1][]{
     \setbeamerfont{theorem body}{family=\songti,series=\mdseries}% 宋体
-    \oldexercise[#1]
+    \oldmyexercise[#1]
 }{
     \setbeamerfont{theorem body}{family=\fangsong}% 恢复仿宋
-    \endoldexercise
+    \endoldmyexercise
 }
 
 % ---------- 楷体环境 ----------
@@ -319,25 +319,25 @@
 }
 
 % remark
-\let\oldremark\remark
-\let\endoldremark\endremark
-\renewenvironment{remark}[1][]{
+\let\oldmyremark\myremark
+\let\endoldmyremark\endmyremark
+\renewenvironment{myremark}[1][]{
     \setbeamerfont{theorem body}{family=\CJKfamily{kai}}% 楷体
-    \oldremark[#1]
+    \oldmyremark[#1]
 }{
     \setbeamerfont{theorem body}{family=\fangsong}% 恢复仿宋
-    \endoldremark
+    \endoldmyremark
 }
 
 % convention
-\let\oldconvention\convention
-\let\endoldconvention\endconvention
-\renewenvironment{convention}[1][]{
+\let\oldmyconvention\myconvention
+\let\endoldmyconvention\endmyconvention
+\renewenvironment{myconvention}[1][]{
     \setbeamerfont{theorem body}{family=\CJKfamily{kai}}% 楷体
-    \oldconvention[#1]
+    \oldmyconvention[#1]
 }{
     \setbeamerfont{theorem body}{family=\fangsong}% 恢复仿宋
-    \endoldconvention
+    \endoldmyconvention
 }
 \makeatother
 
