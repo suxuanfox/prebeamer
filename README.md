@@ -6,6 +6,6 @@
 
 右侧为导航条，模拟网页的滑块；移除了默认模板右下角的跳转按钮，改为在左上角增加两个浅灰色按钮，上（下）按钮表示跳转到当前节（section）的第一页（最后一页）。
 
-该模板使用了大量衬线字体（思源宋体、仿宋、楷体等），请谨慎使用！
+该模板大量使用了衬线字体（思源宋体、仿宋、楷体等），请谨慎使用！
 
 如果字体偏好或需要无衬线，可使用模板[presans.cls](https://github.com/suxuanfox/prebeamer/blob/main/presans.cls)，[examplesans.pdf](https://github.com/suxuanfox/prebeamer/blob/main/examplesans.pdf)为效果示意，此外该模板还提供了中英文选项（默认使用中文），使得定理类环境标题适应于语言选项。
